@@ -1,0 +1,81 @@
+Arch:
+
+(launch i3 gui): startx
+(open terminal): alt + enter 
+(next split horizontal): alt + h  
+(next split vertical): alt + v  
+(resize windows): alt + r + direction
+(update system): sudo pacman -Syu
+(install a package pacman): sudo pacman -S <pkg>
+(search installed packages pacman): pacman -Qs <pkg_name>
+(install a package yay): yay -S <pkg>
+(update all packages yay): yay - Syu
+(search packages yay): yay <pkg_name>
+(minimize windows/newscreens): alt + shift + number
+(Remove package yay): yay -R
+(Remove package with configs/dependencies): yay -Rns <pkg> 
+(Remove orphaned packages): yay -Yc
+(Clean cache yay): yay -Sc
+(Shutoff system): sudo poweroff
+(Reboot system): sudo reboot
+(zoom in): ctrl + shift + "+"
+zoom out): ctrl + shift + "-"
+
+
+nvim:
+(plugin help): ?
+(neotree show hidden): H
+(neotree display): \e
+(neotree prev dir): backspace
+(neotree new file): a
+(neotree delete file): d
+(highlight): v
+(copy): "+y
+(cut): "+d
+(paste): "+p
+(Lazy checkup): :Lazy health
+(Lazy update): :Lazy sync 
+(Find files): \ff
+(Find text): \fg
+(Find Buffer): \fb
+(Find helpdoc): \fh
+(Undo): u
+(Redo): ctrl + r
+(Copilot Toggle): \ct
+(Copilot status): :Copilot status
+(Open toggleterm): \tt
+(close toggleterm): ctrl\ 
+
+
+
+
+Python LSP:
+
+(LSP hover docs): K
+  Show documentation and type info about the symbol under your cursor (like a tooltip). 
+  Great for learning what a function, class, or variable does without leaving your place.
+
+(LSP go to definition): gd
+  Jump directly to where the symbol (function, variable, etc.) is defined in your codebase.
+
+(LSP go to implementation): gi
+  Jump to the actual implementation of an interface, function, or method.
+
+(LSP find references): gr
+  See a list of every place in your code where the symbol is used.
+
+(LSP rename symbol): \lrn
+  Rename the symbol under your cursor across the whole file or project — all usages are updated automatically.
+
+(LSP code actions / quick fix): \lca
+  Show available fixes or actions at the current cursor position (like auto-importing, fixing unused variables, etc.).
+
+(LSP show error popup): \le
+  Open a floating window with a detailed message about the error or warning at the cursor location.
+
+(LSP previous diagnostic): [d
+  Jump to the previous error or warning in the current file.
+
+(LSP next diagnostic): ]d
+  Jump to the next error or warning in the current file.
+
